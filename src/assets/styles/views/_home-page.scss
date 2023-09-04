@@ -1,0 +1,42 @@
+.home-page {
+    background-color: $clr2;
+
+    .hero {
+        height: 100vh;
+
+        div{
+            margin: auto;
+            width: 100%;
+         
+            h1 {
+                font-family: Bow;
+                font-weight: 500;
+                font-size: 13.5vw;
+                color: $clr3;    
+            }
+    
+            button {
+                background: url(../../img/hero.PNG) no-repeat;
+                @include background-img;
+                border-radius: 8px;
+                width: 80%;
+                aspect-ratio: 16 / 4;
+                margin-top: 3rem;
+                transition: 0.3s;
+
+                p{
+                    animation: animateDown infinite 1.5s;
+                    font-size: 5vw;
+                    font-family: Bow;
+                }
+
+                &:hover{
+                    mix-blend-mode: lighten;
+                    filter: brightness(1.5) hue-rotate(30deg);
+                }
+                
+            }
+        }
+    
+    }
+}
