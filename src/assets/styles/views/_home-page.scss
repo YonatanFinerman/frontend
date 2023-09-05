@@ -1,25 +1,26 @@
 .home-page {
-    background-color: $clr2;
+    color: $clr1;
 
     .hero {
-        height: 100vh;
+        min-height: 100vh;
+        width: 100%;
 
-        div{
-            margin: auto;
-            width: 100%;
-         
             h1 {
                 font-family: Bow;
                 font-weight: 500;
                 font-size: 13.5vw;
                 color: $clr3;    
             }
+
+            div{
+                width: 80%;
+            }
     
             button {
-                background: url(../../img/hero.PNG) no-repeat;
+                background: url(../../img/hero.png) no-repeat;
                 @include background-img;
                 border-radius: 8px;
-                width: 80%;
+                width: 100%;
                 aspect-ratio: 16 / 4;
                 margin-top: 3rem;
                 transition: 0.3s;
@@ -33,10 +34,73 @@
                 &:hover{
                     mix-blend-mode: lighten;
                     filter: brightness(1.5) hue-rotate(30deg);
-                }
-                
+                } 
+            }
+    }
+
+    .about{
+        min-height: 100vh;
+        margin:200px auto;
+        gap: 2rem;
+        padding-top: 150px;
+
+        @include for-midium-layout {
+            gap: 5rem;
+        }
+
+        & :first-child{
+            flex-direction: column-reverse;
+     
+            @include for-narrow-layout {
+               flex-direction: row;
             }
         }
-    
+        & :nth-child(2){
+            flex-direction: column;
+            @include for-narrow-layout {
+               flex-direction: row;
+            }
+        }
+
+        .about-prev{
+            gap:2rem;
+            width:100%;
+
+            @include for-midium-layout {
+                width: 850px;
+                gap: 5rem;
+            }
+            @include for-wide-layout {
+                width: 1100px;
+            }
+            
+        }
+
+        .about-info{
+            flex-basis: 50%;
+            padding: 1rem 0;
+            line-height: 2;  
+        }
+
+        h3{
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+            @include for-midium-layout {
+                font-size: 2rem;
+            }
+            
+        }
+        p{
+            font-size: 1rem;   
+            @include for-midium-layout {
+                font-size: 1.4rem;  
+            }
+        }
+
+        img{
+            flex-basis:50%;
+            aspect-ratio: 1 / 1;
+            border-radius: 10px;  
+        }
     }
 }

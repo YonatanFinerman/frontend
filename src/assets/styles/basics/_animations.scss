@@ -21,3 +21,30 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes shine-btn-animation {
+    0% {
+         transform: rotate(-20deg) translateX(-60px);  
+    }
+
+    20% {
+        transform: rotate(-20deg) translate(150px,60px); 
+    }
+            
+    100% {
+        transform: translateX(200vw);
+    }
+}
+// @keyframes shine-btn-animation {
+//     0% {
+//          transform: rotate(-20deg) translateX(-60px);  
+//     }
+
+//     20% {
+//         transform: rotate(-20deg) translate(400px,170px); 
+//     }
+            
+//     100% {
+//         transform: translateX(200vw);
+//     }
+// }
