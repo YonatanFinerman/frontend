@@ -13,7 +13,7 @@ export function AppHeader() {
     return <header className='app-header flex align-center space-between' style={{ background: `${(location.pathname === '/') ? 'none' : '#FFAA00'}` }}>
         <Fade left ><div onClick={() => navigate('/')}><img className='logo' src={(location.pathname !== '/') ? `${require('../assets/img/logo.png')}` : `${require('../assets/img/logo-home.png')}`} /></div></Fade>
         <Fade right > <nav className='flex align-center'>
-            <Link to='about' spy={true} smooth={true} offset={-100} duration={500}><p onClick={() => {
+            <Link to='about' spy={true} smooth={true} offset={-100} duration={0}><p onClick={() => {
                 navigate('/')
                 dispatch({ type: SET_IS_ABOUT_NAV, isAboutNav: true })
 

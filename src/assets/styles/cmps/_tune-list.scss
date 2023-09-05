@@ -1,0 +1,26 @@
+.tune-list {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    // column-gap: 24px;
+    // row-gap: 36px;
+    // margin-top: 35px;
+
+    // @include for-midium-layout {
+    //     grid-template-columns: repeat(4, 1fr);
+    // }
+
+    // @include for-wide-layout {
+    //     grid-template-columns: repeat(4, 1fr);
+    // }
+    display: grid;    
+    column-gap: 24px;
+    row-gap: 36px;
+   
+    @include for-narrow-layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    // @include for-ultrawide-layout {
+    //     grid-template-columns: repeat(3, 1fr);
+    // }
+}

@@ -1,17 +1,19 @@
 import { tuneService } from '../services/tune-service.js'
 // import { userService } from '../../services/user.service.js';
-import { store } from '../store.js';
+import { store } from './store.js';
+import { SET_TUNES } from './tune.reducer.js';
 // import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 // import { ADD_TUNE, SET_TUNES, UPDATE_TUNE } from '../reducers/tune.reducer.js'
 // import { SET_SCORE } from "./user.reducer.js";
 
-export async function loadTunes(filterBy, userLoc = null) {
+export async function loadTunes() {
     try {
-        const tunes = await tuneService.query(filterBy, userLoc)
+        const tunes = await tuneService.query()
         store.dispatch({
             type: SET_TUNES,
             tunes
         })
+        return tunes
 
     } catch (err) {
         console.log('Cannot load tunes', err)

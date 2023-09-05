@@ -1,0 +1,24 @@
+.tune-preview{
+    gap: 2rem;
+    box-shadow: $shadow1;
+    position: relative;
+    cursor: pointer;
+    img{
+        // flex-basis: 40%;
+        width: 40%;
+    }
+    .tune-info{
+        flex-grow: 1;
+        line-height: 2;
+
+        h4{
+            color: $clr1;
+            font-size: 1.4rem;
+        }
+    }
+    .year{
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+    }
+}

@@ -1,4 +1,12 @@
-.tune-index{
-    margin-top: 150px;
+.tune-index{ 
     color: $clr4;
+
+    h2{
+        font-family: Bow;
+        font-weight: 500;
+        font-size: 3rem;
+        color: $clr3;
+        margin: 150px 0 60px;
+        // text-align: center;
+    }
 }
