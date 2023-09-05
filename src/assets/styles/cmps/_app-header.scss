@@ -2,18 +2,18 @@
     background-color: $clr1;
     width: 100vw;
     color: $clr2;
-    padding: 0.75rem 24px 0.75rem 9px;
+    padding: 0.5rem 24px 0.5rem 9px;
     position: fixed;
     z-index: 5;
     top: 0;
     
 
     @include for-narrow-layout {
-        padding: 0.75rem 40px 0.75rem 25px;     
+        padding: 0.5rem 40px 0.5rem 25px;     
     }
     
     @include for-wide-layout {
-        padding: 0.75rem 80px  0.75rem 65px;   
+        padding: 0.5rem 80px  0.5rem 65px;   
     }
     
    .login-link{
@@ -22,7 +22,7 @@
 
     a {
         font-weight: 600;
-        color: black;
+       
 
         &:hover {
             text-decoration: none;
@@ -30,7 +30,7 @@
     }
 
     .logo {
-        width: 4rem;
+        width: 2.5rem;
         animation: spin infinite 5s;
     }
 
