@@ -6,19 +6,33 @@
     img{
         // flex-basis: 40%;
         width: 40%;
+        aspect-ratio:16 / 9;
     }
     .tune-info{
         flex-grow: 1;
-        line-height: 2;
+        line-height: 1.5;
+        padding: 0 1rem;
 
         h4{
             color: $clr1;
             font-size: 1.4rem;
         }
     }
+    .band-year-cont{
+        flex-direction: column;
+        @include for-narrow-layout {
+            flex-direction: row;
+        }
+        @include for-midium-layout {
+          justify-content: space-between;
+          align-items: center;
+        }
+    }
     .year{
-        position: absolute;
-        right: 1rem;
-        bottom: 1rem;
+        @include for-narrow-layout {
+            position: absolute;
+            right: 1rem;
+            bottom: 1rem;
+        }
     }
 }

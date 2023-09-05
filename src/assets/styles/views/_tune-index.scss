@@ -4,9 +4,13 @@
     h2{
         font-family: Bow;
         font-weight: 500;
-        font-size: 3rem;
+        font-size: 2.25;
         color: $clr3;
         margin: 150px 0 60px;
-        // text-align: center;
+        text-align: center;
+        @include for-narrow-layout {
+            text-align: left;
+            font-size: 3rem;
+        }
     }
 }

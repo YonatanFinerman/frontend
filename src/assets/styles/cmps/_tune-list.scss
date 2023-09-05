@@ -16,7 +16,7 @@
     column-gap: 24px;
     row-gap: 36px;
    
-    @include for-narrow-layout {
+    @include for-midium-layout {
         grid-template-columns: repeat(2, 1fr);
     }
 
