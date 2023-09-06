@@ -4,7 +4,6 @@
     position: relative;
     cursor: pointer;
     img{
-        // flex-basis: 40%;
         width: 40%;
         aspect-ratio:16 / 9;
     }
@@ -34,5 +33,24 @@
             right: 1rem;
             bottom: 1rem;
         }
+    }
+
+    &.selected{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: $clr2;
+        z-index: 2;
+        width: 60%;
+        aspect-ratio: 16 / 9;
+        padding: 1rem;
+       
+    }
+
+    .close-modal-btn{
+        position: absolute;
+        top: 1rem;
+        right:1rem;
     }
 }
