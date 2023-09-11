@@ -15,8 +15,7 @@ export function RootCmp() {
             <main className='main-layout'>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/tune" element={<TuneIndex />} />
-                    
+                    <Route path="/tune" element={<TuneIndex />} />       
                 </Routes>
             </main>
            

@@ -20,7 +20,5 @@ export function TuneIndex(){
       
       { <TuneList tunes={tunes} currTune={currTune} setCurrTune={setCurrTune}/>}
     
-      
-     
     </section>
 }
