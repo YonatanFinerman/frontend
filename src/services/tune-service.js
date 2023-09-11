@@ -15,8 +15,8 @@ window.cs = tuneService
 _createTunes()
 
 async function query() {
-    let tunes = await httpService.get('tune')
-    // let tunes = await storageService.query(STORAGE_KEY)
+    // let tunes = await httpService.get('tune')
+    let tunes = await storageService.query(STORAGE_KEY)
     return tunes
 }
 
